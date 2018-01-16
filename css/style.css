@@ -1,0 +1,64 @@
+#banniere {
+background-color:#eeeeee;
+height:100px;
+width:66%;
+margin:auto;
+}
+#centre {
+width:66%;
+margin:auto;
+}
+#menu  {
+float:left;
+width:20%;
+background-color:#eeee55;
+height:200px;
+}
+#contenu {
+margin-left:20%;
+background-color:#55eeee;
+width:80%;
+height:500px;
+}
+
+.left{
+	text-align:left;
+}
+
+.right{
+	text-align:right;
+}
+
+h1{
+	text-align:center;
+}
+
+h2{
+	text-align:center;
+}
+
+input[type="number"]
+{
+	width:15%;
+}
+
+table{
+	width:100%;
+}
+
+td{
+	width:15%;
+}
+
+.center{
+	text-align:center;
+}
+
+img
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height:auto;
+	width:auto;
+}
