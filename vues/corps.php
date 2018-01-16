@@ -1,17 +1,13 @@
-
 <?php
-echo "<div id='banniere'>";
-	include ("banniere.php");
-echo "</div>";
+// Entete de la page
+include ("banniere.php");
 
-echo "<div id='centre'>";
-	echo "<div id='menu'>";
-		include ("menu.php");
-	echo "</div>";
+// Menu
+include ("menu.php");
 
-	echo "<div id='contenu'>";
-		include ("contenu.php");
-	echo "</div>";
-echo "</div>";
+// Page demandée par l'utilisateur (sinon, page d'accueil)
+include ("contenu.php");
 
+// Pied de page
+include ("pied_page.php");
 ?>

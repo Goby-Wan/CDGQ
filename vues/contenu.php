@@ -1,43 +1,31 @@
 <?php
-$page="accueil";
 
+// Si une page est demandée, on récupère sa valeur
 if (isset($_GET["rub"])) {
 	$page=$_GET["rub"];
+} else {
+    $page='accueil';
 }
-include $page.".php";
 
+// Liste des pages du site
+$pages = array(
+'liste_items',
+'liste_utilisateur',
+'liste_composant',
+'accueil',
+'recherche_machine',
+'recherche_peripheriques',
+'fiche_machine'
+);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-if ($page=='liste_items' || $page=='liste_utilisateur'
-|| $page=='liste_composant'
-|| $page=='accueil'
-|| $page=='recherche_machine'
-|| $page=='recherche_peripheriques'
-|| $page=='fiche_machine') {
-	include $page.".php";
+// Si la page fait partie de la liste des pages, on l'inclut
+if (in_array($page,$pages)) {
+	include "pages/".$page.".php";
 }
 else
 {
-	include "404.php";
+    // Sinon, on affiche un message d'erreur
+	include "pages/404.php";
 }
-*/
+
 ?>
